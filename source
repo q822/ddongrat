@@ -1,0 +1,61 @@
+
+	for _,v in pairs(workspace:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("UnionOperation")then
+			local a1,a2,a3,a4,a5,a6 = Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v)
+			a1.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a2.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a3.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a4.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a5.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a6.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a1.Transparency = v.Transparency
+			a2.Transparency = v.Transparency
+			a3.Transparency = v.Transparency
+			a4.Transparency = v.Transparency
+			a5.Transparency = v.Transparency
+			a6.Transparency = v.Transparency
+			a1.Color3 = v.Color
+			a2.Color3 = v.Color
+			a3.Color3 = v.Color
+			a4.Color3 = v.Color
+			a5.Color3 = v.Color
+			a6.Color3 = v.Color
+			a1.Face = Enum.NormalId.Front
+			a2.Face = Enum.NormalId.Back
+			a3.Face = Enum.NormalId.Left
+			a4.Face = Enum.NormalId.Right
+			a5.Face = Enum.NormalId.Top
+			a6.Face = Enum.NormalId.Bottom
+		end
+	end
+
+	workspace.DescendantAdded:Connect(function(v)
+		if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("UnionOperation")then
+			local a1,a2,a3,a4,a5,a6 = Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v),Instance.new("Decal",v)
+			a1.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a2.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a3.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a4.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a5.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a6.Texture = "http://www.roblox.com/asset/?id=72238601583349"
+			a1.Transparency = v.Transparency
+			a2.Transparency = v.Transparency
+			a3.Transparency = v.Transparency
+			a4.Transparency = v.Transparency
+			a5.Transparency = v.Transparency
+			a6.Transparency = v.Transparency
+			a1.Color3 = v.Color
+			a2.Color3 = v.Color
+			a3.Color3 = v.Color
+			a4.Color3 = v.Color
+			a5.Color3 = v.Color
+			a6.Color3 = v.Color
+			a1.Face = Enum.NormalId.Front
+			a2.Face = Enum.NormalId.Back
+			a3.Face = Enum.NormalId.Left
+			a4.Face = Enum.NormalId.Right
+			a5.Face = Enum.NormalId.Top
+			a6.Face = Enum.NormalId.Bottom
+		end
+	end)
+end
